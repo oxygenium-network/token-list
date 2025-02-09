@@ -29,5 +29,5 @@ export const testnet = testnetTokenList as TokenList
 export const OXM: TokenInfo = mainnet.tokens.find((token) => token.symbol === 'OXM')!
 
 export function getTokensURL(networkId: NetworkId): string {
-  return `https://raw.githubusercontent.com/alephium/token-list/master/tokens/${networkId}.json`
+  return `https://raw.githubusercontent.com/oxygenium-network/token-list/master/tokens/${networkId}.json`
 }

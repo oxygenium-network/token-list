@@ -53,7 +53,7 @@ describe('TokenList', function () {
       tokenList.tokens.forEach((token) => {
         if (token.logoURI) {
           expect(token.logoURI).toMatch(
-            new RegExp(`https://raw.githubusercontent.com/alephium/token-list/master/logos/${token.symbol}.(png|svg)`)
+            new RegExp(`https://raw.githubusercontent.com/oxygenium-network/token-list/master/logos/${token.symbol}.(png|svg)`)
           )
         }
       })
@@ -119,7 +119,7 @@ describe('TokenList', function () {
       decimals: 18,
       description:
         'Oxygenium is a scalable, decentralized, and secure blockchain platform that enables the creation of fast and secure applications.',
-      logoURI: 'https://raw.githubusercontent.com/alephium/token-list/master/logos/OXM.png'
+      logoURI: 'https://raw.githubusercontent.com/oxygenium-network/token-list/master/logos/OXM.png'
     }
 
     tokenLists.forEach((tokenList) => {
@@ -160,10 +160,10 @@ describe('TokenList', function () {
     if (token.originChain !== undefined) {
       expect(originChains.includes(token.originChain)).toBe(true)
       expect(token.logoURI).toMatch(
-        new RegExp(`https://raw.githubusercontent.com/alephium/token-list/master/logos/${token.symbol}.png`)
+        new RegExp(`https://raw.githubusercontent.com/oxygenium-network/token-list/master/logos/${token.symbol}.png`)
       )
       expect(token.unchainedLogoURI).toMatch(
-        new RegExp(`https://raw.githubusercontent.com/alephium/token-list/master/logos/${token.symbol}-unchained.png`)
+        new RegExp(`https://raw.githubusercontent.com/oxygenium-network/token-list/master/logos/${token.symbol}-unchained.png`)
       )
     }
   }

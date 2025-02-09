@@ -13,5 +13,5 @@ Inclusion on this list does not imply an endorsement, audit or any form of verif
 https://github.com/alephium/token-list/blob/master/tokens/mainnet.json#L4-L11
 
 * All of the token logos should stay in the folder `logos` with the same naming as the token symbol
-* The token uri in the token metadata should use the Github logo uri: `https://raw.githubusercontent.com/alephium/token-list/master/logos/<symbol>.png`
+* The token uri in the token metadata should use the Github logo uri: `https://raw.githubusercontent.com/oxygenium-network/token-list/master/logos/<symbol>.png`
 * The token uri will be available once your PR is merged to `master` branch
