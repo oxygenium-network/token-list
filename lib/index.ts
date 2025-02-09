@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2023 The Alephium Authors
+Copyright 2018 - 2023 The Oxygenium Authors
 This file is part of the alephium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -26,7 +26,7 @@ export const mainnet = mainnetTokenList as TokenList
 export const testnet = testnetTokenList as TokenList
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-export const ALPH: TokenInfo = mainnet.tokens.find((token) => token.symbol === 'ALPH')!
+export const OXM: TokenInfo = mainnet.tokens.find((token) => token.symbol === 'OXM')!
 
 export function getTokensURL(networkId: NetworkId): string {
   return `https://raw.githubusercontent.com/alephium/token-list/master/tokens/${networkId}.json`

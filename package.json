@@ -1,5 +1,5 @@
 {
-  "name": "@alephium/token-list",
+  "name": "@oxygenium-network/token-list",
   "version": "0.0.20",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "browserslist": {},
   "devDependencies": {
-    "@alephium/web3": "^1.8.5",
+    "@oxygenium-network/web3": "^1.8.5",
     "@types/jest": "^29.2.5",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",

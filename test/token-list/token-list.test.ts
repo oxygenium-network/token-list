@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2023 The Alephium Authors
+Copyright 2018 - 2023 The Oxygenium Authors
 This file is part of the alephium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { FungibleTokenMetaData, hexToString, NodeProvider } from '@alephium/web3'
+import { FungibleTokenMetaData, hexToString, NodeProvider } from '@oxygenium-network/web3'
 
 import { TokenInfo, TokenList } from '../../lib/types'
 import mainnetJson from '../../tokens/mainnet.json'
@@ -103,7 +103,7 @@ describe('TokenList', function () {
 
   const mainnetNodeProvider = new NodeProvider(mainnetURL)
   mainnetTokenList.tokens.forEach((token) => {
-    if (token.symbol !== 'ALPH') {
+    if (token.symbol !== 'OXM') {
       it(`validate mainnet ${token.name}`, async () => {
         await validateTokenMetadata(token, mainnetNodeProvider)
         await validateTokenType(token, mainnetNodeProvider)
@@ -111,25 +111,25 @@ describe('TokenList', function () {
     }
   })
 
-  it('should have ALPH token', () => {
-    const expectedALPH: TokenInfo = {
+  it('should have OXM token', () => {
+    const expectedOXM: TokenInfo = {
       id: ''.padStart(64, '0'),
-      name: 'Alephium',
-      symbol: 'ALPH',
+      name: 'Oxygenium',
+      symbol: 'OXM',
       decimals: 18,
       description:
-        'Alephium is a scalable, decentralized, and secure blockchain platform that enables the creation of fast and secure applications.',
-      logoURI: 'https://raw.githubusercontent.com/alephium/token-list/master/logos/ALPH.png'
+        'Oxygenium is a scalable, decentralized, and secure blockchain platform that enables the creation of fast and secure applications.',
+      logoURI: 'https://raw.githubusercontent.com/alephium/token-list/master/logos/OXM.png'
     }
 
     tokenLists.forEach((tokenList) => {
-      expect(tokenList.tokens.find((token) => token.symbol === 'ALPH')).toEqual(expectedALPH)
+      expect(tokenList.tokens.find((token) => token.symbol === 'OXM')).toEqual(expectedOXM)
     })
   })
 
   const testnetNodeProvider = new NodeProvider(testnetURL)
   testnetTokenList.tokens.forEach((token) => {
-    if (token.symbol !== 'ALPH') {
+    if (token.symbol !== 'OXM') {
       it(`validate testnet ${token.name}`, async () => {
         await validateTokenMetadata(token, testnetNodeProvider)
         await validateTokenType(token, testnetNodeProvider)
